@@ -1,12 +1,17 @@
 package com.hibernet;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Student {
+    @Id
     private int sid;
     private String s_name;
     private String domain;
 
 
-    public void setSid(int sid) {
+    public void setSid() {
         this.sid = sid;
     }
 
@@ -34,4 +39,6 @@ public class Student {
                 ", domain='" + domain + '\'' +
                 '}';
     }
+
+
 }
